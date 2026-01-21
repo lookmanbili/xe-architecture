@@ -1,7 +1,7 @@
-# XE Architecture: X-Slot Elasticity and Orchestrating N-Expert LLM Clusters via Dynamic VRAM Shuffling
+# XEO Architecture: X-Slot Elasticity and Orchestrating N-Expert LLM Clusters via Dynamic VRAM Shuffling
 
 
-The XE Architecture (X-Slot Elasticity) is a hardware-aware framework designed to orchestrate an ensemble of N specialized LLM experts within a constrained X-Slot VRAM environment.
+The XEO Architecture (X-Slot Elasticity) is a hardware-aware framework designed to orchestrate an ensemble of N specialized LLM experts within a constrained X-Slot VRAM environment.
 
 This project was born out of economic necessity: the goal is to significantly reduce the cost of running high-parameter intelligence by utilizing Dynamic VRAM Shuffling. By treating the GPU as a transient cache rather than a static storage unit, the XE Architecture allows a single consumer-grade GPU to provide the breadth of a 10-model cluster with minimal efficiency drawbacks in the mid-term.
 
@@ -15,7 +15,7 @@ This project was born out of economic necessity: the goal is to significantly re
 
 # Main Projected Operational Benefits
 
-- **Lower VRAM Requirement:** Standard MoE forces all experts into VRAM, requiring expensive, multi-GPU setups. XE keeps experts in System RAM, only loading one into the "X-Slot" when needed. This allows users and enterprises to run massive, gazillion-parameter models on single consumer GPUs, slashing hardware costs tremendously.
+- **Lower VRAM Requirement:** Standard MoE forces all experts into VRAM, requiring expensive, multi-GPU setups. XEO keeps experts in System RAM, only loading one into the "X-Slot" when needed. This allows users and enterprises to run massive, gazillion-parameter models on single consumer GPUs, slashing hardware costs tremendously.
 - **Lower General Hardware Cost:**
 
 # Main Projected Operational Challenges
