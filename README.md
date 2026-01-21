@@ -15,7 +15,7 @@ This project was born out of economic necessity: the goal is to significantly re
 
 # Main Projected Operational Benefits
 
-- **Lower VRAM Requirement:**
+- **Lower VRAM Requirement:** Standard MoE forces all experts into VRAM, requiring expensive, multi-GPU setups. XE keeps experts in System RAM, only loading one into the "X-Slot" when needed. This allows users and enterprises to run massive, gazillion-parameter models on single consumer GPUs, slashing hardware costs tremendously.
 - **Lower General Hardware Cost:**
 
 # Main Projected Operational Challenges
