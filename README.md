@@ -7,7 +7,7 @@ This project was born out of economic necessity: the goal is to significantly re
 
 Key Components & Philosophy
 
-- Economic Optimization: By keeping experts pinned in System RAM and only "parking" them in VRAM for active inference, we bypass the need for multi-GPU setups or expensive high-VRAM enterprise hardware.
+- Economic Optimization: By keeping experts pinned in System RAM and only "parking" them in VRAM for active inference, we need less specialized hardware to achieve high-level results. This approach allows the system to bypass the need for multi-GPU setups or expensive, high-VRAM enterprise hardware, making "gazillion-parameter" logic accessible on standard consumer machines.
 
 - Hardware Awareness: The framework is built with full recognition of current PCIe bottlenecks and IO-latency hurdles. It is a "Starter" architecture—designed to be simple enough for initial testing but robust enough to be enhanced with asynchronous pre-fetching and logit-bias routing in future iterations.
 
