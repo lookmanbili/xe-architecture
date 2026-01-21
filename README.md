@@ -45,6 +45,10 @@ This project was born out of economic necessity: the goal is to significantly re
 
 * Use cases documenting seamless operational performance, alongside detailed VRAM and energy consumption metrics, are highly encouraged and essential.
 
+
+#21/01/2026
+#69
+
 * New hardware designs could be adjusted for this need, providing a built-in solution for this architecture, even though it is not yet clear exactly how.
 
 
