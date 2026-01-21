@@ -1,4 +1,4 @@
-# XEO Architecture: X-Slot Elasticity and Orchestrating N-Expert LLM Clusters via Dynamic VRAM Shuffling
+# SMoE Architecture: X-Slot Elasticity and Orchestrating N-Expert LLM Clusters via Dynamic VRAM Shuffling
 
 The modern Mixture of Experts technique was designed to lower hardware requirements. In contrast to loading a whole model, it allows for selective economcal computation. yet it still demands that the entire expert library be stored in GPU memory. In other words: it requires every expert to reside in VRAM simultaneously. This 'VRAM tax' makes truly massive models expensve. 
 
@@ -16,7 +16,7 @@ This project was born out of economic necessity: the goal is to significantly re
 
 # Main Projected Operational Benefits
 
-- **Lower VRAM Requirement:** Standard MoE forces all experts into VRAM, requiring expensive, multi-GPU setups. XEO keeps experts in System RAM, only loading one into the "X-Slot" when needed. This allows users and enterprises to run massive, gazillion-parameter models on single consumer GPUs, slashing hardware costs tremendously.
+- **Lower VRAM Requirement:** Standard MoE forces all experts into VRAM, requiring expensive, multi-GPU setups. SMoE keeps experts in System RAM, only loading one into the "X-Slot" when needed. This allows users and enterprises to run massive, gazillion-parameter models on single consumer GPUs, slashing hardware costs tremendously.
 - **Lower General Hardware Cost:**
 
 # Main Projected Operational Challenges
