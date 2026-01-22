@@ -14,7 +14,7 @@ This project was born out of economic necessity: the goal is to significantly re
 
 
 
-<img width="741" height="721" alt="shuffledsmoe" src="https://github.com/user-attachments/assets/2b145798-64af-4fbb-9725-c12bf809c7c7" />
+<img width="751" height="281" alt="shuffledsmoe2" src="https://github.com/user-attachments/assets/df788269-be13-4d26-ada6-37b3d415dc02" />
 
 
 
