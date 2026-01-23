@@ -19,7 +19,7 @@ This project was born out of economic necessity: the goal is to significantly re
 
 # Proposed Optimization Mechanisms
 
-- **Fractal Weight Loading :** Unlike standard MoE models that load massive, "atomic" expert blocks, your architecture utilizes Hierarchical Fractal Loading. By "zooming in" on specific task-neuron clusters (leaves) rather than entire domains (branches), you reduce the PCIe bandwidth requirement, enabling massive efficiency.
+- **Fractal Weight Loading :** Unlike standard MoE models that load massive, "atomic" expert blocks, this architecture utilizes Hierarchical Fractal Loading. By "zooming in" on specific task-neuron clusters (leaves) rather than entire domains (branches), we reduce the PCIe bandwidth requirement, enabling massive efficiency.
 
 
 
