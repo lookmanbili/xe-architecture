@@ -23,11 +23,15 @@ This project was born out of economic necessity: the goal is to significantly re
 
 We adhere to 03 non-negotiable pillars:
 
-- **Bit-Perfect Accuracy :** 
+- **Bit-Perfect Accuracy :** Intelligence is the primary product. We reject lossy compression, quantization, or distillation that degrades the original model's "IQ." Speed must be a result of structural efficiency, not intellectual compromise.
   
-- **Economic Optimization :**
+- **Ultra-Low Energy Consumption :** By loading only the Minimal Functional Unit (Task Neurons), we eliminate the wasted electrical cost of moving "dead weights" across the PCIe bus. Efficiency is measured by Joules-per-Token.
   
-- **Economic Optimization :**
+- **Low Hardware Barrier :** The architecture is subjected to continuous benchmarking against perceived "standard user-level" hardware . This ensures that performance gains are derived from algorithmic orchestration rather than proprietary, high-value hardware features.
+
+We fix for the moment 01 negotiable pillar:
+
+- **Inference Speed :** Inference speed is strategically moderated to accommodate the low hardware constraints. In instances of significant context shifts , a controlled latency margin is permitted, ensuring that the User Reaction Time does not exceed an undesirable threshold. And while the architecture accommodates short-term adaptive latency during extreme context pivots, the overarching objective is the achievement of Ultra-High Inference Throughput. 
 
 # Key Philosophy
 
