@@ -13,7 +13,6 @@ This project was born out of economic necessity: the goal is to significantly re
 - **Lower Energy Cost:** Standard LLM and MoE architectures require massive power to keep an entire GPU cluster idling and cooled, as every parameter must remain resident in VRAM. SMoE Architecture slashes energy consumption tremendously by operating on a single GPU. By only 'powering up' one expert in the X-Slot at a time, it eliminates the massive electrical overhead and industrial cooling requirements of enterprise data centers.
 
 
-
 <img width="751" height="281" alt="shuffledsmoe2" src="https://github.com/user-attachments/assets/df788269-be13-4d26-ada6-37b3d415dc02" />
 
 
@@ -21,13 +20,13 @@ This project was born out of economic necessity: the goal is to significantly re
 
 - **Asynchronous X-Slot Management :** The X-Slot transforms VRAM from a static storage tank into a high-speed "revolving door." By managing *VRAM as an Asynchronous Buffer* dedicated to incoming fractal weights, you enable trillion-parameter models to run on consumer GPUs with virtually infinite context agility.
 
-- **Fractal Weight Loading :** Unlike standard MoE models that load massive, "atomic" expert blocks, this architecture utilizes *Hierarchical Fractal Loading*. By "zooming in" on specific task-neuron clusters (leaves) rather than entire domains (branches), we reduce the PCIe bandwidth requirement, enabling massive efficiency.
+- **Fractal Weight Loading :** Unlike standard MoE models that load massive, "atomic" expert blocks, this architecture utilizes *Hierarchical Fractal Loading*. By "Zooming In" on specific task-neuron clusters (leaves) rather than entire domains (branches), we reduce the PCIe bandwidth requirement, enabling massive efficiency.
 
 - **Temporal Latency Masking :** This architecture leverages the Temporal Gap existing between user input and model execution to mitigate physical data-transfer bottlenecks. During the user-input phase or the initial token-parsing sequence, the Predictive Orchestrator initiates *Asynchronous Background Transfers*. This mechanism effectively masks PCIe latency within the human-interaction window, ensuring that the necessary fractal weights are resident in the X-Slot before the execution phase commences.
 
-- **Predictive Orchestration:** The Predictive Orchestrator acts as a rewiring mechanism feedback loop. The Orchestrator anticipates needs and pre-loads data into the X-Slot before the Router requests it. Implemented as a continuously retrained Tree-Map, it performs Conditional Selective Pre-fetching: monitoring user input in real-time, and only loads Fractal Leaf modules when high-precision semantic needs (e.g., Modular Arithmetic Opcodes) are identified. Selective Loading ensures the system remains responsive by triggering weight transfers only when high-precision needs are detected, effectively eliminating unnecessary VRAM swaps and micro-stutters. Meaning weights are mobilized asynchronously during typing to mask PCIe latency, but execution waits until the sentence is complete. This ensures the X-Slot is populated with the exact expert weights needed for lossless, high-accuracy inference at 20–30 TPS.
+- **Predictive Orchestration:** The Predictive Orchestrator acts as a rewiring mechanism feedback loop. The Orchestrator anticipates needs and pre-loads data into the X-Slot before the Router requests it. Implemented as a continuously retrained "Tree-Map", it performs Conditional Selective Pre-fetching: monitoring user input in real-time, and only loads Fractal Leaf modules when high-precision semantic needs (e.g., Modular Arithmetic Opcodes) are identified. Selective Loading ensures the system remains responsive by triggering weight transfers only when high-precision needs are detected, effectively eliminating unnecessary VRAM swaps and micro-stutters. Meaning weights are mobilized asynchronously during typing to mask PCIe latency, but execution waits until the sentence is complete. This ensures the X-Slot is populated with the exact expert weights needed for lossless, high-accuracy inference at 20–30 TPS.
 
-- **Dynamic Tree-Map Retraining:** The Self-Optimizing Index allows the Orchestrator to evolve through *Periodic Retraining*. It learns user-specific subject pivots and "prunes" unnecessary branches from the pre-load list. This personalization creates a localized, high-speed "neural shortcut" that gets faster the more it's used.
+- **Dynamic Tree-Map Retraining:** The Self-Optimizing Index allows the Orchestrator to evolve through periodic retraining. It learns user-specific subject pivots and "Prunes" unnecessary branches from the pre-load list. This personalization creates a localized, high-speed "neural shortcut" that gets faster the more it is used. In this context, "Tree-Map" search refers to a hyperbolic search with capped depth and branching, which significantly reduces the computational overhead required to navigate the model's knowledge graph.
 
 
 
@@ -92,8 +91,7 @@ VRAM holds only the micro "leaf" neurons required; for example, to solve a formu
 <img width="722" height="510" alt="SMoE" src="https://github.com/user-attachments/assets/00ce7bda-5e32-4f71-a717-633e43a049fa" />
 
 
-#21/01/2026
-#69
+#01/21/2026
 
 
 
