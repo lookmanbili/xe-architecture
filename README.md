@@ -10,7 +10,7 @@ This project was born out of economic necessity: the goal is to significantly re
 
 - **Lower VRAM Requirement:** Standard FPSMoE forces all experts into VRAM, requiring expensive, multi-GPU setups. FPSMoE keeps experts in System RAM, only loading one into the "X-Slot" when needed. This allows users and enterprises to run massive, gazillion-parameter models on single consumer GPUs, slashing hardware costs tremendously.
 
-- **Lower Energy Cost:** Standard LLM and FPSMoE architectures require massive power to keep an entire GPU cluster idling and cooled, as every parameter must remain resident in VRAM. FPSMoE Architecture slashes energy consumption tremendously by operating on a single GPU. By only 'powering up' one expert in the X-Slot at a time, it eliminates the massive electrical overhead and industrial cooling requirements of enterprise data centers.
+- **Lower Energy Cost:** Standard LLM and FPSMoE architectures require massive power to keep an entire GPU cluster idling and cooled, as every parameter must remain resident in VRAM. FPSMoE Architecture slashes energy consumption and eliminates the massive electrical overhead and industrial cooling requirements of enterprise data centers.
 
 
 <img width="751" height="281" alt="FPSMoE" src="https://github.com/user-attachments/assets/df788269-be13-4d26-ada6-37b3d415dc02" />
