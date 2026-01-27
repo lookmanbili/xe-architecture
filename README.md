@@ -4,7 +4,7 @@ The modern Mixture of Experts technique was designed to lower hardware requireme
 
 The FPSMoE Architecture circumvents this limit by introducing the X-Slot—a dynamic gateway that swaps experts from System RAM only when they are needed. It is a hardware-aware framework designed to orchestrate an LLM expert within a constrained VRAM environment. By managing VRAM as an asynchronous buffer dedicated to incoming fractal weights, you enable trillion-parameter models to run on standard consumer GPUs (relatively) with a huge context agility; this is basically an slightly enhanced offloading mechanism.
 
-### Tradeoffs and structural wise, we believe that:
+### Structure wise, we believe that:
  
 • Correctness and acceptable answers are more valuable than less accurate but faster ones.<br>
 • Using user typing time should be done, but not at the expense of false intent/context capture, by introducing a 100% validation process.<br>
@@ -13,7 +13,7 @@ The FPSMoE Architecture circumvents this limit by introducing the X-Slot—a dyn
 
 ***It introduces intent-aware static (periodically retrained) routing and context anticipation mechanisms that leverage user typing time for pre-analysis and expert prefetching. By treating system RAM as a weight warehouse and VRAM as a dynamic workspace, the architecture enables high-capacity models to operate on low-VRAM consumer hardware with significantly reduced energy consumption.***
 
-***FPSMoE is a forward-designed LLM architecture for training or deeply fine-tuning models with hierarchical, modular experts from the ground up. It enables dynamic expert loading and memory-efficient inference, and _is intended for builders shaping new models and is not designed for retrofitting existing monolithic LLMs_.***
+*FPSMoE is a forward-designed LLM architecture for training or deeply fine-tuning models with hierarchical, modular experts from the ground up. It enables dynamic expert loading and memory-efficient inference, and _is intended for builders shaping new models and is not designed for retrofitting existing monolithic LLMs_.*
 
 
 
